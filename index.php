@@ -47,7 +47,7 @@
             if ($this-> subtitle === NULL) {
                 return $this -> title;
             } else {
-                return $this -> title . "  ". $this -> subtitle;
+                return $this -> title . " : ". $this -> subtitle;
             }
         }
         public function __toString() {
@@ -61,10 +61,10 @@
     }
     $f1 = new Film("Matrix");
     $f2 = new Film("Fantozzi 2");
-    $f3 = new Film("Peter Pan" );
+    $f3 = new Film("Peter Pan");
     
-    $f2 -> subtitle = ":il ritorno di fantozzi";
-    $f3 -> subtitle = ":il ritorno all'isola che non c'e' ";
+    $f2 -> subtitle = "il ritorno di fantozzi";
+    $f3 -> subtitle = "il ritorno all'isola che non c'e'";
     $f3 -> movie_director = "Robin Budd";
 
     echo "FILM:". $f1."<br>";
